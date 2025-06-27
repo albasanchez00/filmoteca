@@ -13,8 +13,8 @@
         <picture><img src="media/logo-filmoteca.svg" alt=""></picture>
         <nav>
             <ul>
-                <a href="filmoteca.html"><li>Inicio</li></a>
-                <a href="#"><li>Peliculas</li></a>
+                <a href="./index.html"><li>Inicio</li></a>
+                <a href="#peliculas-container"><li>Peliculas</li></a>
                 <a href="#"><li>Series</li></a>
             </ul>
         </nav>
@@ -41,5 +41,11 @@
         <p class="footer__copy">© 2025 Film Library</p>
       </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            filmoteca.cargarLocal();
+            mostrarPeliculas();
+        });
+    </script>
 </body>
 </html>
